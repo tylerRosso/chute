@@ -1,0 +1,24 @@
+# https://editorconfig.org
+#
+# shfmt reads the [*.sh] section, so `shfmt -d build.sh` needs no flags.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+[*.go]
+indent_style = tab
+
+[*.sh]
+indent_style = tab
+shell_variant = posix
+switch_case_indent = true
+space_redirects = true
+function_next_line = true
+
+[*.md]
+indent_style = space
+indent_size = 2
